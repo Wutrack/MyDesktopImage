@@ -1,0 +1,564 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  box-sizing: border-box;
+}
+html { height: 101%; } /* always display scrollbars */
+body { font-size: 62.5%; line-height: 1; font-family: Arial, Tahoma, Verdana, sans-serif; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong { font-weight: bold; } 
+
+input { outline: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; max-width: 100%; }
+
+a { text-decoration: none; }
+
+.button{
+    padding: 7px;
+    border: 1px solid #3e3e3e;
+    background: #727272;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 45px;
+    transition-duration: 0.3s;
+    font-weight: 700;
+}
+.button:hover{
+    background: #949494;
+}
+body{
+    background-color: #4d4d4d;
+}
+a{
+color: darkslategray;
+text-decoration: none;
+font-weight: 600;
+}
+
+.mainDiv{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #A9A9A9;
+    padding: 0 46px;
+    border-left: 2px solid #222222;
+    border-right: 2px solid #222222;
+}
+.title{
+    height: 220px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+.title .leftBut{
+    text-align: left;
+    position: absolute;
+    left: 0; top: 20px;
+    width: 300px;
+}
+.title .logo{
+    width: 500px;
+    margin: 0 auto;
+}
+.title .rightBut{
+    position: absolute;
+    right: 0; top: 20px;
+    width: 300px;
+    text-align: right;
+}
+.title .intro{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+.title .intro h1{
+    font-size: 20px;
+}
+.divNavNoLogin{
+    height: 100px;
+    line-height: 100px;
+}
+.divSort a{
+    color: #fff;
+    font-weight: 300;
+}
+.divSort{
+    padding: 2px 8px;
+    border: 1px solid #3e3e3e;
+    background: #727272;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 30px;
+    display: inline-block;
+    margin: 20px 0;
+}
+.divSearch{
+    padding: 2px 8px;
+    border: 1px solid #3e3e3e;
+    background: #727272;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 30px;
+    display: inline-block;
+    float: right;
+    margin: 20px 0;
+}
+.divSearch .search{
+    background: #727272;
+    border: 1px solid #3e3e3e;
+    margin: 0;
+    font-size: 18px;
+}
+.aNav{
+    float: left;
+    width: 150px;
+    text-align: left;
+    padding: 2px 8px;
+    border: 1px solid #3e3e3e;
+    background: #727272;
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+    display: inline-block;
+}
+.aNav a{
+    font-weight: 300;
+    color: #fff;
+    line-height: 23px;
+    text-decoration: none;
+}
+.aNav a:hover{
+    border-bottom: solid 1px;
+}
+.aNav span{
+    color: #00001a;
+}
+.pictures{
+    display: inline-block;
+    width: 940px;
+    min-height: 700px;
+    margin-left: 10px;
+}
+.box{
+    float: left;
+    margin: 20px 15px;
+    position: relative;
+    height: 160px;
+    width: 280px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 6px 6px 28px 0px rgba(102,102,102,1);
+}
+.img{
+    margin: auto;
+    max-width: 310px;
+    position: absolute;
+}
+.img17{
+    left: -5px;
+    max-width: 290px;
+    position: absolute;
+}
+.img19{
+    left: -15px;
+    max-width: 310px;
+    position: absolute;
+}
+.img2{
+    left: -20px;
+    max-width: 321px;
+    position: absolute;
+}
+.picturesSearch{
+    text-align: justify;
+    margin-left: 15%;
+    padding: 2%;
+    font-size: 0;
+}
+.boxSearch{
+    margin: 10px;
+    display: inline-block;
+    position: relative;
+    height: 160px;
+    width: 275px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 6px 6px 28px 0px rgba(102,102,102,1);
+}
+.imgSearch{
+    margin: auto;
+    max-width: 290px;
+    position: absolute;
+
+}
+.boxView{
+    margin: 1%;
+    display: inline-block;
+}
+.break {
+    display: inline-block;
+    width: 30%;
+    height: 0
+}
+.imgRec{
+    height: 100px;
+    width: 800px;
+    margin-left: 20%;
+    visibility: hidden;
+}
+.pages{
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+.pages a{
+    padding: 2px 8px;
+    border: 1px solid #3e3e3e;
+    background: #727272;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 30px;
+    display: inline-block;
+    margin: 10px 3px;
+}
+.pages a.disabled{
+    pointer-events: none; /* делаем ссылку некликабельной */
+    cursor: default;  /* устанавливаем курсор в виде стрелки */
+    background: #9AA4FF;
+}
+.topWrap{
+    padding: 2%;
+    height: 500px;
+    display: inline-block;
+    width: 850px;
+    margin-left: 30px;
+}
+.topWrap h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.topWrap .tableTop{
+    font-size: 14px;
+}
+.mainfooter{
+    width: 100%;
+    height: auto;
+    border-top: 5px solid #1C1C1C;
+    background: #696969;
+}
+.footer{
+    position: relative;
+    width: 1100px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.footer span{
+    font-size: 12px;
+    color: white;
+    font-family: 'Arial';
+}
+.age16{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.left{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+#qoo-counter{
+    margine-top: 5px;
+}
+.pictureBox{
+    display: inline-block;
+    margin-left: 20px;
+    width: 900px;
+    position: relative;
+}
+.pictureBox .selected{
+    display: inline-block;
+    position: absolute;
+    right: 25px;
+    top: 0;
+}
+.pictureBox .selected img{
+    height: 45px;
+}
+.pictureBox .divPView{
+    position: relative;
+    padding: 10px;
+//  border: 1px solid #BEBEBE;
+}
+.pictureBox .spanRazr,
+.pictureBox .spanLooked,
+.pictureBox .divPView .spanAutor,
+.pictureBox .divPView .spanTags,
+.pictureBox .divPView .spanData{
+    font-size: 16px;
+    margin: 10px;
+    line-height: 30px;
+}
+.pictureBox .divPView a{
+    color: darkslategray;
+    font-weight: 600;
+    text-decoration: none;
+}
+.pictureBox .divPView a:hover{
+    font-weight: 600;
+    text-decoration: underline;
+}
+.pictureBox .divPView .divImgPV{
+    overflow: hidden;
+    position: relative;
+    margin: 10px;
+}
+.pictureBox .divPView .divImgPV .prevImg{
+    position: absolute;
+    left: 5px;
+    z-index: 5;
+    width: 50%;
+    height: 97.5%;
+    opacity: 0;
+    display: table-cell;
+    vertical-align: middle;
+}
+.pictureBox .divPView .divImgPV .prevImg:hover{
+    transition: 0.1s;
+    opacity: 0.7;
+}
+.pictureBox .divPView .divImgPV .nextImg{
+    position: absolute;
+    right: 5px;
+    z-index: 5;
+    width: 50%;
+    height: 97.5%;
+    opacity: 0;
+}
+.pictureBox .divPView .divImgPV .nextImg:hover{
+    transition: 0.1s;
+    opacity: 0.7;
+}
+.pictureBox .arrowPrev{
+    position: absolute;
+    top: 50%;
+    margin-top: -64px;
+}
+.pictureBox .arrowNext{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -64px;
+}
+.pictureBox .divPView .divImgPV .imgPV{
+    position: relative;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+.pictureBox .adminDiv{
+    /*background: red;*/
+    position: absolute;
+    bottom: 0;
+}
+.pictureBox .tru{
+    border-bottom: 2px solid #BEBEBE;
+    border-radius: 8px;
+    padding: 4px;
+}
+.pictureBox .spanRazr{
+    float: right;
+    font-weight: 600;
+}
+.pictureBox .rep{
+    font-size: 15px;
+    line-height: 20px;
+}
+.pictureBox .picturesView{
+}
+.pictureBox .picturesView .boxView{
+    margin: 15px;
+    display: inline-block;
+}
+.pictureBox .imgView{
+    float: left;
+    height: 155px;
+    width: 262px;
+    border-radius: 8px;
+    box-shadow: 6px 6px 28px 0px rgba(102,102,102,1);
+}
+
+.login{
+    height: 300px;
+    width: 300px;
+    padding: 30px;
+    border: 1px solid #3e3e3e;
+    background: #727272;
+    margin: 0 auto;
+    text-align: center;
+}
+.login p{
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+}
+.reg{
+    padding: 2%;
+    margin-left: 15%;
+}
+
+.load{
+    display: inline-block;
+    padding: 30px;
+}
+.load .loadForm,
+.load .divDescription,
+.load .divDescription ul{
+    margin: 20px;
+}
+.load .divDescription h1{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.load .divDescription .please{
+    font-size: 30px;
+    color: #a8000e;
+    margin-bottom: 10px;
+}
+.load .loadFormTag{
+    height: 700px;
+}
+.load .loadFormTag h1,
+.load .loadForm span,
+.load .divDescription span,
+.load .divDescription p{
+    font-size: 18px;
+    line-height: 20px;
+}
+.load .divDescription li{
+    color: #210005;
+    font-size: 16px;
+    line-height: 20px;
+}
+.load .buttonLoad{
+    text-decoration: none;
+    color: #1C1C1C;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: "Times New Roman";
+    padding: 6px 6px;
+    background: -moz-linear-gradient(
+            top,
+            #ffffff 0%,
+            #ebebeb 50%,
+            #dbdbdb 50%,
+            #b5b5b5);
+    background: -webkit-gradient(
+            linear, left top, left bottom,
+            from(#ffffff),
+            color-stop(0.50, #ebebeb),
+            color-stop(0.50, #dbdbdb),
+            to(#b5b5b5));
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #949494;
+    -moz-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5),
+    inset 0px 0px 2px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5),
+    inset 0px 0px 2px rgba(255, 255, 255, 1);
+    box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5),
+    inset 0px 0px 2px rgba(255, 255, 255, 1);
+    text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.2),
+    0px 1px 0px rgba(255, 255, 255, 1);
+}
+.load .buttonLoad:hover{
+    color: #5D478B;
+}
+.load .loadForm span{
+    margin: 20px 0 10px;
+    display: inline-block;
+}
+
+.load #forTags{
+    width: 600px;
+    height: 100px;
+    margin-top: 15px;
+}
+.load #forTags span{
+    font-size: 15px;
+    border: 1px solid #3e3e3e;
+    padding: 2px 4px;
+    display: inline-block;
+    margin: 4px;
+    cursor: pointer;
+}
+.tableTop{
+    /*background: bisque;*/
+    width: 100%;
+    table-layout: auto;
+}
+.tableTop td{
+    text-align: center;
+    line-height: 21px;
+}
+.tableTop td:first-child{
+    line-height: 21px;
+    width: 5px;
+    text-align: left;
+} 
+#set{
+    display: inline-block;
+}
+#set span{
+    display: inline-block;
+    font-weight: 600;
+}
+.scoreHolder{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 15px;
+    margin: 0;
+}
+.span{
+    position: absolute;
+    left: 42%;
+    font-size: 20px;
+}
+.plus{
+    position: absolute;
+    right: 0;
+    top: 2px;
+    /*vertical-align: baseline;*/
+}
+.minus{
+    position: absolute;
+    left: 0;
+    top: 2px;
+    /*vertical-align: baseline;*/
+}
+.edit{
+    margin-bottom: 30px;
+}
+.autorName{
+    font-size: 20px;
+    text-align: center;
+}

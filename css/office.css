@@ -1,0 +1,214 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  box-sizing: border-box;
+}
+html { height: 101%; } /* always display scrollbars */
+body { font-size: 62.5%; line-height: 1; font-family: Arial, Tahoma, Verdana, sans-serif; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong { font-weight: bold; } 
+
+input { outline: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; max-width: 100%; }
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+
+
+
+.loginOffice{
+    display: inline-block;
+    float: left;
+    width: 300px;
+}
+.loginOffice .divAvatar{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+.loginOffice .divAvatar h1{
+    font-size: 30px;
+}
+.loginOffice .divAvatar .avatar{
+    border: 2px solid #BEBEBE;
+    margin: 5px;
+}
+.loginOffice .divAvatar .divInfo span,
+.loginOffice .divAvatar .divInfo p,
+.loginOffice .divAvatar .divInfo a{
+    font: 15px "Times New Roman" ;
+    color: #1C1C1C;
+    line-height: 18px;
+}
+.loginOffice .divAvatar .divInfo p{
+    text-align: left;
+}
+.loginOffice .divAvatar .divInfo span{
+    float: right;
+}
+.loginOffice .divScore{
+    margin: 20px auto;
+}
+.loginOffice .divScore p{
+    font: 20px "Times New Roman" ;
+    color: #1C1C1C;
+}
+.loginOffice .divScore span{
+    font: 20px "Times New Roman" ;
+    color: #1C1C1C;
+    float: right;
+}
+.loginOffice .divMessage{
+    width: 100%;
+    border: 1px solid #BEBEBE;
+    padding: 5px;
+}
+.loginOffice .divMessage .mesNav a,
+.loginOffice .divMessage .mesNav span,
+.loginOffice .divMessage .mesBox a{
+    text-decoration: none;
+    color: #1c1c1c;
+    font: 15px "Times New Roman" ;
+}
+.mes a:visited{
+    font-weight: 300;
+}
+.mes{
+    padding: 5px;
+    margin: 10px auto;
+    border: 1px solid #3e3e3e;
+}
+.divP{
+    display: inline-block;
+    width: 800px;
+    text-align: center;
+}
+.divP p{
+    font: 25px "Times New Roman" ;
+    color: #1C1C1C;
+    text-decoration: underline;
+}
+.userPic{
+    width: 800px;
+    display: inline-block;
+    padding: 20px;
+}
+.imgOffice{
+    height: 100px;
+    width: 170px;
+    border-radius: 8px;
+    box-shadow: 6px 6px 28px 0px rgba(102,102,102,1);
+}
+.toUserPic{
+    font-size: 20px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.addinfo,
+.messWrap{
+    height: 700px;
+    width: 600px;
+    display: inline-block;
+    margin: 30px;
+}
+.messWrap .mesNavigate{
+    border: 1px solid #3e3e3e;
+    padding: 5px;
+}
+.messWrap .mesNavigate a{
+    font-weight: 700;
+    text-decoration: none;
+}
+.addinfo .addForm p,
+.messWrap .writeMes p,
+.messWrap .writeMes span,
+.messWrap .mesNavigate span,
+.messWrap .mesNavigate a{
+    font-size: 16px;
+    line-height: 18px;
+}
+.addinfo .addForm p,
+.messWrap .writeMes p,
+.messWrap .writeMes span,
+.messWrap .writeMes textarea{
+    margin: 5px;
+}
+.messWrap .messBox .mes{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 17px;
+}
+.addinfo .addForm .stick{
+    font-weight: 700;
+    margin-top: 30px;
+}
+.allowing{
+    min-height: 700px;
+    padding: 20px;
+    display: inline-block;
+}
+.allowing .boxPic{
+    height: 160px;
+    width: 280px;
+}
+.allowing .boxTag{
+    height: 40px;
+    border: 1px solid #BEBEBE;
+    line-height: 40px;
+    padding: 0 10px;
+}
+.allowing p{
+    font-size: 22px;
+    margin: 10px;
+}
+.allowing .alPlus,
+.allowing .alMinus,
+.allowing .allowingSpan{
+    font-size: 20px;
+    margin: 0 5px;
+}
+.allowing .alPlus,
+.allowing .alMinus{
+    cursor: pointer;
+}
+.allowing .alPlus{
+    color: darkgreen;
+}
+.allowing .alMinus{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

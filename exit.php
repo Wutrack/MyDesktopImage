@@ -1,0 +1,18 @@
+<?php
+include './session.php';
+          session_start();
+          if    (empty($_SESSION['login']) or empty($_SESSION['pass'])) 
+          {
+          //если не существует сессии с логином и паролем, значит на    этот файл попал невошедший пользователь. ≈му тут не место. ¬ыдаем сообщение    об ошибке, останавливаем скрипт
+          exit ("ƒоступ на эту    страницу разрешен только зарегистрированным пользовател€м. ≈сли вы    зарегистрированы, то войдите на сайт под своим логином и паролем<br><a    href='index.php'>√лавна€    страница</a>");
+          }
+          
+unset($_SESSION['pass']);
+            $login = $_SESSION['login'];
+            mysqli_query($db, "UPDATE users SET lastdata = NOW() WHERE login = '$login'");
+            unset($_SESSION['login']); 
+            unset($_SESSION['idusers']);//    уничтожаем переменные в сесси€х
+            
+        exit("<html><head><meta    http-equiv='Refresh' content='0;    URL=index.php'></head></html>");
+            // отправл€ем пользовател€ на главную страницу.
+            ?>
